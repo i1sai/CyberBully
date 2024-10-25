@@ -1,0 +1,54 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Report an Incident</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <header>
+        <h1>Report an Incident</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="view_reports.html">View Reports</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h2>Fill in the form below to report an incident of cyberbullying:</h2>
+          <form action="/submit_report" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="bullying_type">Type of Bullying:</label>
+            <select id="bullying_type" name="bullying_type" required>
+              <option value="verbal">Verbal Abuse</option>
+              <option value="harassment">Harassment</option>
+              <option value="threat">Threat</option>
+              <option value="defamation">Defamation</option>
+            </select>
+            
+            <label for="description">Description of the Incident:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="evidence">Upload Evidence:</label>
+            <input type="file" id="evidence" name="evidence" accept="image/*,video/*">
+
+            <button type="submit" class="btn">Submit Report</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Cyberbully Reporting System</p>
+      </footer>
+    </body>
+    </html>
+    
